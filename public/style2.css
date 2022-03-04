@@ -1,0 +1,30 @@
+body
+{
+  text-align: center;
+}
+.chartdisp
+{
+  height: 460px;
+  width: 460px;
+}
+.bargraph
+{
+  background-color: pink;
+
+}
+.graphcontain
+{
+  padding: 20px;
+}
+.linegraph
+{
+  background-color: pink;
+}
+.scatterplot
+{
+  background-color: pink;
+}
+.piechart
+{
+  background-color: pink;
+}

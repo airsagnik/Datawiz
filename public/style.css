@@ -1,0 +1,23 @@
+.bar
+{
+   color: pink
+}
+.bar:hover
+{
+  fill: blue;
+}
+body
+{
+  text-align: center;
+}
+.selection
+{
+  display:inline-grid;
+}
+.csvvalues
+{
+  padding: 5%;
+  background-color: #488FB1;
+  margin: 5%;
+  border-radius: 5%;
+}
