@@ -1,7 +1,14 @@
+document.querySelector(".notifier").style.display="none";
+document.querySelector(".notifier2").style.display="none";
 document.getElementById("sub").addEventListener("click",submit);
+document.querySelector(".btn").addEventListener("click",function(){
+  document.querySelector(".notifier2").style.display="block";
+});
 
 function submit()
 {
+  document.querySelector(".notifier").style.display="block";
+  d3.select("notifier").append("h1").text("Please wait while we load data");
   var csv=document.getElementById('inputFile').files[0];
     var formData=new FormData();
     formData.append("uploadCsv",csv);
@@ -13,8 +20,10 @@ function submit()
   //request.setRequestHeader("Content-type", "multipart/form-data"); //----(*)
 
   request.onreadystatechange = function (){
+    document.querySelector(".notifier").style.display="none";
     if(request.readyState === XMLHttpRequest.DONE && request.status === 200) {
       console.log("yey");
+      d3.select("notifier").remove();
       var datamat=request.responseText;
       var d=datamat.substring(1,datamat.length-1).split(",");
       console.log(d);

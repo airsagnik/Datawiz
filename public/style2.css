@@ -1,13 +1,14 @@
 body
 {
   text-align: center;
+  
 }
 .chartdisp
 {
-  height: 460px;
-  width: 460px;
+  height: 500px;
+  width: 98%;
 }
-.bargraph
+.bargraph1
 {
   background-color: pink;
 
@@ -16,15 +17,15 @@ body
 {
   padding: 20px;
 }
-.linegraph
+.linegraph1
 {
   background-color: pink;
 }
-.scatterplot
+.scatterplot1
 {
   background-color: pink;
 }
-.piechart
+.piechart1
 {
   background-color: pink;
 }

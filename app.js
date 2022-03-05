@@ -31,7 +31,7 @@ app.post('/',function(req,res){
 
     if(isNaN(mp2.get(i)[xsel]))
     {
-      xdata.push(0);
+      xdata.push(mp2.get(i)[xsel]);
     }
     else
     {
