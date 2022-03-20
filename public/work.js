@@ -1,6 +1,8 @@
 document.querySelector(".notifier").style.display="none";
 document.querySelector(".notifier2").style.display="none";
+
 document.getElementById("sub").addEventListener("click",submit);
+
 document.querySelector(".btn").addEventListener("click",function(){
   document.querySelector(".notifier2").style.display="block";
 });
